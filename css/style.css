@@ -1,0 +1,462 @@
+:root {
+    scroll-behavior: smooth;
+    scroll-padding: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+
+
+/* ************ navbar*********** */
+
+.navbar {
+    background-color: #040404;
+
+}
+
+.navbar .active::after{
+    /* outline: #09c !important; */
+    content: "";
+    height: 3px;
+    width: 85%;
+    background-color: #F5F5F5;
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    transition: all 1s;
+}
+
+
+.nav-item a {
+    position: relative;
+
+}
+
+.nav-item a::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #F5F5F5;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    transition: all 1s;
+
+}
+
+
+.nav-item a:hover::after {
+    width: 85%;
+    left: 10px;
+
+
+}
+
+
+
+
+
+#navbarSupportedContent {
+    margin: 0;
+}
+
+/* ************** HEADER SECTION ************** */
+
+.header {
+    height: 100vh;
+    background: url(./../img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.header .l {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+}
+
+
+#element{
+    font-size: 3rem;
+    
+}
+
+.typed-cursor{
+    font-size: 3rem;
+}
+
+/* .animate{
+    font-size: 2rem;
+    font-weight:500 ;
+    margin: auto;
+}
+
+.animate::before{
+    content: "";
+    position: absolute;
+    color: #fff;
+    animation-name: trans;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes trans{
+    0% {content:"Des |"}
+    10% {content:"Desginer |"}
+    20% {content:" |"}
+    25% {content:"Dev |"}
+    39% {content:"Devloper |"}
+    42% {content:" |"}
+    54% {content:"free |"}
+    65% {content:"freelancer |"}
+    70% {content:" |" }
+    71% {content:"phot |"}
+    82% {content:"photogap |"}
+    90% {content:"photogapher |"}
+    91% {content:" |"}
+    99% {content:"photogapher |"}
+    100% {content:"Des  |"}
+} */
+
+
+
+
+/* ********************* BIO SECTION ************** */
+
+
+.bio {
+    background-color: #F5F5F5;
+}
+
+.bio-pargraph {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    color: #4e4e4e;
+}
+
+
+#bio h2{
+    position: relative;
+}
+
+#bio h2::before{
+
+    content: "";
+
+    width: 120px;
+    height: 4px;
+    background-color: #09c;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+
+/* ***************** services section *************** */
+
+.serviecs {
+    background-color: #F5F5F5;
+
+}
+
+.line{
+    position: relative;
+    /* margin-bottom: 100px; */
+}
+
+.marg{
+    margin-top: 80px;
+}
+
+.line::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 7px;
+    right: 47.5%;
+    background-color: #09c;
+
+}
+
+.serviecs .icon {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    text-align: center;
+    line-height: 120px;
+    border-radius: 50%;
+    border: 7px solid #09c;
+
+}
+
+
+.card:hover .icon {
+    background-color: rgb(53, 185, 230);
+    border-color: rgb(154, 217, 238);
+    color: #fff;
+}
+
+.font{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* ************************ counter section **************** */
+
+
+section {
+    background-image: url(./../img/counters-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+
+section .layer {
+    background-color: rgba(0, 122, 255, 0.6);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+
+.pep {
+
+    line-height: 90px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 8px solid #f1f1f1;
+}
+
+
+/* ********************** BLOG SECTION *************** */
+
+.blog {
+    background-color: #F5F5F5;
+
+}
+
+.psuod {
+
+    position: relative;
+}
+
+.psuod::after {
+    content: " TRAVEL";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #09c;
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    bottom: 43%;
+    left: 42%;
+
+    border-radius: 5px;
+}
+
+
+.an a {
+    color: #000;
+    transition: 0.5s;
+    font-size: 21px;
+
+}
+
+.an:hover a {
+    color: #09c;
+
+}
+
+
+
+.pic-footer {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.a-footer {
+    color: #000;
+
+
+}
+
+.a-footer:hover {
+    color: #09c;
+}
+
+
+.card-footer {
+    height: 48px;
+}
+
+.vl {
+    vertical-align: middle;
+
+}
+
+/* ***************** portofolio ********************* */
+
+.plus {
+    font-size: 2.7rem;
+    color: #fff;
+    background-color: #09c;
+    border-radius: 50%;
+    border: 4px #09c solid
+}
+
+
+.Portfolio {
+    background-color: #F5F5F5;
+}
+
+
+.card-portfolio {
+    overflow: hidden;
+}
+
+.card_img {
+    overflow: hidden;
+}
+
+.card_img>img {
+
+    transition: all 1.25s;
+
+}
+
+.card-portfolio:hover img {
+    scale: 1.3;
+}
+
+
+.card-portfolio h6 {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+
+.card-portfolio h6 span {
+    color: rgb(206, 64, 9);
+}
+
+
+
+
+
+/* ************************  slider section******************** */
+
+.slider-sec .layer {
+    background-color: rgba(0, 122, 255, 0.6);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+
+
+.slider-sec {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./../img/overlay-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+#carouselExampleIndicators button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+
+.pic-slid {
+    width: 110px;
+    height: 110px;
+}
+
+
+
+
+/* ********** form *************** */
+
+
+.contact {
+    background-image: url(./../img/overlay-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.contact .layer {
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 122, 255, 0.6);
+    z-index: -1;
+}
+
+
+path {
+    fill: #09c;
+}
+
+
+.fb {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-width: 3px;
+    padding-left: 11px;
+    padding-top: 10px;
+}
+
+.contact h3 {
+    position: relative;
+}
+
+.contact h3::after {
+
+    content: "";
+
+    width: 120px;
+    height: 4px;
+    background-color: #09c;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
