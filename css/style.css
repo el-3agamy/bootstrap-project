@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
 :root {
     scroll-behavior: smooth;
     scroll-padding: 50px;
@@ -459,4 +465,14 @@ path {
     position: absolute;
     bottom: -15px;
     left: 0;
+}
+
+
+/* ****************** */
+
+@media screen  and (max-width:768px){
+    .counter{
+        display: flex;
+        flex-direction: column;
+    }
 }
