@@ -468,11 +468,53 @@ path {
 }
 
 
-/* ****************** */
+/* ****************** Media Query ************** */
 
 @media screen  and (max-width:768px){
+    #bio{
+        padding: 0 !important;
+    }
+    #bio .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #bio>.shadow{
+        margin: auto !important;
+        padding: 42px 0 !important;
+        width: 100% !important;
+    }
+    .info{
+        margin-right: 0 ;
+        margin: auto;
+        text-align: center;
+        margin-top: 24px;
+        width: 1250px;
+    }
+
+    .bio-pargraph{
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    .personal-info{
+        width: 100% !important ;
+        margin: 0 auto;
+    }
+
+    .about-me{
+        margin: 0 0 0 25px;
+    }
+
+
     .counter{
         display: flex;
         flex-direction: column;
+    }
+
+    .carousel-inner .w-75{
+        width: 100% !important;
     }
 }
